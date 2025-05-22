@@ -24,7 +24,7 @@ const DepartmentList = () => {
 
   const fetchDepartments = async () => {
     try {
-      const response = await axios.get('https://employees-cruv.onrender.com/api/v1/department/get', {
+      const response = await axios.get('https://employee-zfam.onrender.com/api/v1/department/get', {
         withCredentials: true,
       });
      
@@ -40,7 +40,7 @@ const DepartmentList = () => {
   const handleAddDepartment = async () => {
     try {
       const res = await axios.post(
-        'https://employees-cruv.onrender.com/api/v1/department/create',
+        'https://employee-zfam.onrender.com/api/v1/department/create',
         newDepartment,
         { withCredentials: true }
       );
@@ -70,7 +70,7 @@ const DepartmentList = () => {
   const handleSaveEdit = async () => {
     try {
       const res = await axios.put(
-        `https://employees-cruv.onrender.com/api/v1/department/update/${editDepartment._id}`,
+        `https://employee-zfam.onrender.com/api/v1/department/update/${editDepartment._id}`,
         editDepartment,
         { withCredentials: true }
       );
