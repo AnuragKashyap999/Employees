@@ -48,7 +48,7 @@ export default function CreateEmployeeForm() {
     });
 
     try {
-      const res = await axios.post("https://employees-frontend.onrender.com/api/v1/user/create", data,
+      const res = await axios.post("https://employees-cruv.onrender.com/api/v1/user/create", data,
         {
           headers: { 'Content-Type': 'multipart/form-data' },
           withCredentials: true,
