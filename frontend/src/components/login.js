@@ -16,7 +16,7 @@ function Login() {
     try {
       setLoading(true);
       const res = await axios.post(
-        'https://employees-cruv.onrender.com/api/v1/user/login',
+        'https://employee-zfam.onrender.com/api/v1/user/login',
         { username, password },
         {
           headers: {
