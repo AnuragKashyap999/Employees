@@ -11,7 +11,7 @@ const Hearder = () => {
     const logout=async()=>{
         try{
         
-            const logout=await axios.get('https://employees-frontend.onrender.com/api/v1/user/logout',{
+            const logout=await axios.get('https://employees-cruv.onrender.com/api/v1/user/logout',{
                       withCredentials:true,
             })
            toast.success(logout.data.message);
